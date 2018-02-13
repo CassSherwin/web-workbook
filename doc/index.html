@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans">
+    <title>Challenge 01</title>
+</head>
+<body>
+  <div id="body">
+    <header class="firstheader">
+  <div id="header">
+       <img class="logo" src="css/i-icon.png" alt="">
+      <h1 class="headertitle">  Call Now : 512-555-1234 | Enter For A Chance To Win A FREE Visit From One of Our Ironing Specialist</h1>
+        <nav class="headernav">
+          <p class="headerinput">
+            <input class="enter" type="email" name="email" value="Your email">
+            <input id="ok" class="submit1" type="submit" value="Okay!">
+          </p>
+       </nav>
+       <div id="header">
+    </header>
+  <div class="imgdiv" style="background-image: url(css/iron.jpg)">
+        <header class="secondHeader">
+          <div class='main-div'>
+          <h1 class="companyname"> I RUN <br />IRONS</h1>
+        <nav class="second-header-nav">
+          <ul class='header-ul'>
+            <li><a class="seca" href="#">SERVICES</a></li>
+            <li><a class="seca" href="#">CONTACT</a></li>
+            <li><a class="seca" href="#">GIFT CARDS</a></li>
+            <li><a class="seca" href="#">BOOK NOW</a></li>
+          </ul>
+        </nav>
+        </header>
+<section class='sec1'>
+       <h1 class='main-title'>House Ironing Austin</h1>
+       <h2 class='main-text'> Schedule your in home ironing in 60 seconds</h2>
+  <div class='slider-div'>
+  <div class='garment-div'>
+         <label class='garments'>Garments: <span id="slider-span1" style="color:#white" "font-weight:bolder"></span></label>
+         <input id="slider1" class="slide slider1" type="range" value="5" min="1" max="10">
+  </div>
+  <div class='method-div'>
+         <label class='method'>When Needed: <br /> (in hours) <span id="slider-span2" style="color:white"></span></label>
+         <input id="slider2" class="slide slider2" type="range" value="24" min="6" max="72">
+  </div>
+  </div>
+    <script>
+      var slider = document.getElementById("slider1");
+      var output = document.getElementById("slider-span1");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+      var slider2 = document.getElementById("slider2");
+      var output2 = document.getElementById("slider-span2");
+      output2.innerHTML = slider2.value;
+
+      slider2.oninput = function() {
+        output2.innerHTML = this.value;
+      }
+    </script>
+  <div class='textbox-div'>
+        <form action="/action_page.php">
+        <input id='textbox-one' class="textbox one" type="text" name="onetime" value="1 time service">
+        <input class="textbox two" type="text" name="oneweek" value="Every week">
+        <input class="textbox three" type="text" name="twoweek" value="Every two weeks" >
+        <input class="textbox four" type="text" name="month" value="Every four weeks">
+  </div>
+  <div class='submit-div'>
+        <input class="submit2" type="submit" value="SCHEDULE AN APPOINTMENT">
+        </form>
+  </div>
+</section>
+  </div>  <!--main div-->
+  </div>  <!--img div-->
+<section class='sec2'>
+  <div class='third-div'>
+    <h1 class="how-works"> HOW I RUN WORKS </h1>
+  <div class='how-works-div'>
+  <div class="boxes book-box">
+      <a target="_blank" href="css/laptop.png">
+      <img class="box-img" src="css/laptop.png" alt="laptop" width="300" height="200">
+      </a>
+  <div class="desc1">BOOK <br /> <br /> Select a date and time.</div>
+  </div>
+  <div class="boxes book-box2">
+      <a target="_blank" href="css/ironing.png">
+      <img class="box-img" src="css/ironing.png" alt="ironing man" width="300" height="200">
+      </a>
+  <div class="desc2">IRON <br /> <br /> We iron your clothes.</div>
+  </div>
+  <div class="boxes book-box3">
+      <a target="_blank" href="css/happy.png">
+      <img class="box-img" src="css/happy.png" alt="happy customer" width="300" height="200">
+      </a>
+  <div class="desc3">LOOK GOOD <br /><br /> Enjoy your wrinkle free clothes.</div>
+  </div>
+  </div>
+  <div id="bookbutton">
+      <p>
+         <input class="submit3" type='submit' value="BOOK APPOINTMENT">
+      </p>
+    </div>
+  </div>
+</section>
+<section class='sec4'>
+ <div id="why">
+   <h2 id="whybox"> WHY I RUN IRONS</h2>
+  <p class="why-paragraph">
+    <pre class='pre1'>
+    You’re busy and the last thing you need is to wake up and iron your clothes. That’s why we’re offering a high quality, thorough and
+    hassle-free home ironing service in Austin, Round Rock, Cedar Park, Georgetown, and Pflugerville. We do everything with simple flat
+    rate pricing and easy online booking. We guarantee you’ll be satisfied with our work or we’ll give you your money back!
+
+    I Run Irons is the fastest growing home ironing service in the Austin area. We believe in being reliable, timely, and detailed on every job.
+    We’re confident you’ll love the service. That’s why we’re putting our money where our mouth is with our 200% happiness guarantee.
+
+    No estimates, quotes, or in-house clothes inspections needed. Simply tell us how many clothing items you need ironed. Select a time that fits
+    into your schedule, book your ironing and take the rest of the day off. Then, we get your clothes looking brand new. It’s that easy!
+
+    We also provide all our own products and supplies. Give us a shot and book today. You have nothing to lose with our 200% guarantee!
+  </pre>
+  </p>
+ </div>
+</section>
+<section class='sec5'>
+  <div id="guarantee">
+    <div class="happy-guarantee">
+    <h2 id="guarhead">	200% HAPPINESS GUARANTEE </h2>
+    <p id="guarpar">
+      <pre class='pre2'>
+        We wouldn’t give a 200% happiness guarantee if we didn’t think you were going to love our work. That’s why, if you aren’t satisfied
+        enough to recommend our ironing service to a friend, we’ll come back and do the ironing over. If you’re still not happy with how wrinkle
+        free your clothes are, we will give you a full refund, no questions asked. We are putting our money where our mouth is. That’s how confident
+        we are you’ll love our ironing service!
+        <img class="guarantee-img" src="css/sat.png" alt="guarantee">
+        </pre>
+      </p>
+  </div>
+  </div>
+</section>
+<footer class="my-footer">
+  <div id="footer" class="footer-div">
+    <div class ="footerbox box1">
+    <nav class='footer-nav'>
+      <ul>
+        <li><a href="#login">LOGIN</a>
+        <li><a href="contactus">CONTACT US</a>
+        <li><a href="FAQS"> FREQUENTLY ASKED QUESTIONS </a></li>
+        <li><a href="#ironingservice"> IRONING SERVICE</a></li>
+        <li><a href="pressing">PRESSING SERVICE</a></li>
+        <li><a href="dropoff">DROP OFF SERVICE</a></li>
+        <li><a href="steam"> STEAM SERVICE </a></li>
+        <li><a href="sewingservice"> SEWING SERVICE</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class ="footerbox box2">
+    <nav>
+      <ul>
+      <li><a href="other">OTHER SERVICES</a></li>
+      <li><a href="linenservice">LINENS SERVICE</a></li>
+      <li><a href="laundry"> LAUNDRY SERVICE</a></li>
+      <li><a href="giftcard"> GIFT CARD</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class ="footerbox box3">
+     <nav>
+       <ul>
+        <li><a href="careers">CAREERS</a></li>
+       </ul>
+     </nav>
+  </div>
+  <div class ="footerbox box4">
+     <nav>
+       <ul>
+        <li> <a href="about">ABOUT US</a></li>
+        <li> <a href="terms">TERMS OF SERVICE</a></li>
+        <li><a href="service"> SERVICE POLICY</a></li>
+        <li><a href="privacy"> PRIVACY POLICY</a> </li>
+       </ul>
+     </nav>
+  </div>
+  <div class="footerbox box5">
+  <div class="footericons">
+   <a href="http://www.facebook.com"><img class="footerimg fb" src="css/fb.png" alt="facebook"></a>
+   <a href="http://www.twitter.com"><img class="footerimg tw" src="css/twit.png" alt="twitter">
+   <a href="http://www.instagram.com"><img class="footerimg inst" src="css/insta.png" alt="instagram">
+  </div>
+     <nav>
+    <h3 id="footerconnect"> STAY CONNECTED </h3>
+    <form action="/action_page.php">
+    <p>
+     <input class="footer-textbox email" type="text" name="email" value="email"> <br />
+    </p>
+    <p>
+      <br />
+     <input class="submit4" type="submit" value="SIGN UP">
+    </p>
+    <br />
+    </form>
+    <ul class=icons-ul>
+    <li><span class="create"><img class='phone-img' alt='phone' src="css/icon-phone-small.png"/>512-555-1234</span></li>
+    <li><span class="create mail-span"><img class='mail-img' alt='email' src="css/icon-mail-small.png"/>info@irunirons.com</span></li>
+    </ul>
+    <p class='copy-p'>
+      <a class='copy' href="#copyw">  © Posted in 2018 by Cassandra Sherwin</a>
+     </p>
+     </nav>
+  </div> <!--footer div-->
+   </footer>
+ </div> <!--body div-->
+ </body>
+</html>
