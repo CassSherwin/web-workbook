@@ -70,7 +70,6 @@ div.imgdiv {
 #formarea {
   font-family: "Open Sans", sans-serif;
 }
-/*second header*/
 .second-header-div {
   display:flex;
   justify-content: flex-end;
@@ -216,7 +215,6 @@ margin-top: 40px;
   clear: both;
   padding-right: 50px;
 }
-/*bottom of main header*/
 .submit2 {
   height: 60px;
   width: 800px;
@@ -249,13 +247,7 @@ margin-top: 40px;
 }
 .textbox:hover {
     background-color: #68c7cc;
-  }
-.textbox:focus {
-    background-color: #68c7cc;
-  }
-#textbox-one:focus::before  {
-    background-color: #68c7cc;
-  }
+}
 .textbox:active {
     background-color: #68c7cc;
 }
@@ -299,7 +291,7 @@ margin-top: 40px;
   position: absolute;
   text-align: center;
 }
-/* how it works section */
+/* second section */
 .how-works-div {
   display: flex;
   justify-content: space-around;
@@ -357,7 +349,6 @@ margin-left: 20px;
   text-align: center;
   padding-top: 10px;
 }
-/*why i run section*/
 #why {
   background-color: #262626;
   background: radial-gradient(circle, black, gray);
@@ -379,7 +370,6 @@ margin-left: 20px;
   padding-left: 5px;
   padding-right: 5px;
 }
-/*guarantee section*/
 pre, #guarpar {
     font-size: 17px;
     font-family: "Open Sans", sans-serif;
@@ -401,8 +391,6 @@ pre, #guarpar {
  #guarhead, #guarpar {
    text-align: center;
  }
-
- /*footer*/
 #footer {
   background-color: #262626;
   background: radial-gradient(circle, black, gray);
