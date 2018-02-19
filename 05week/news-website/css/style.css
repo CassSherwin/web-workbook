@@ -1,0 +1,144 @@
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  width: 100%;
+  height: 1200px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+h1 {
+text-align: center;
+font-size: 30px;
+font-family: fantasy;
+margin-top: 10px;
+}
+img {
+  align-items: center;
+}
+h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: monospace;
+}
+.item.box1 {
+  border: solid gray;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 400px;
+  margin-left: 225px;
+}
+.item.box2 {
+  grid-column-start: 3;
+  grid-column-end: span 5;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  height: 500px;
+  width: 400px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  border: solid gray;
+}
+.item.box3 {
+  background: purple;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 2;
+  grid-row-end: span 4;
+}
+.item.box4 {
+  background: yellow;
+  grid-column-start: 3;
+  grid-column-end: span 4;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
+.item.box5 {
+  background: gray;
+  grid-column-start: 4;
+  grid-column-end: span 5;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
+.item.box6 {
+  background: orange;
+  grid-column-start:3;
+  grid-column-end: span 5;
+  grid-row-start: 3;
+  grid-row-end: span 4;
+}
+.item.box7 {
+  background: aqua;
+  grid-column-start:1;
+  grid-column-end: span 2;
+  grid-row-start: 4;
+  grid-row-end: span 5;
+}
+.item.box8 {
+  background: beige;
+  grid-column-start:2;
+  grid-column-end: span 3;
+  grid-row-start: 4;
+  grid-row-end: span 5;
+}
+.item.box9 {
+  background: teal;
+  grid-column-start:3;
+  grid-column-end: span 4;
+  grid-row-start: 4;
+  grid-row-end: span 5;
+}
+.item.box10 {
+  background: white;
+  grid-column-start:4;
+  grid-column-end: span 5;
+  grid-row-start: 4;
+  grid-row-end: span 5;
+}
+
+
+
+
+/* Extra Small and up (Portrait Phones) */
+
+
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+  /* Just use the same as Extra Small above  */
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "box1 box2"
+      "box3 box4"
+      "box5 box6"
+      "box7 box8";
+  }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      "box1 box1 box2"
+      "box3 box4 box2"
+      "box6 box5 box5"
+      "box6 box7 box8";
+  }
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+  /* Just use the same as Large above  */
+}

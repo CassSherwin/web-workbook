@@ -1,0 +1,64 @@
+.container > div {
+  height: 50px;
+  width: 50px;
+  background: orange;
+  margin: 10px;
+}
+.container {
+  width: 10%;
+  margin: 0 auto;
+  transition: opacity 2s linear;
+}
+.container:hover > .item.color2   {
+  transform: scale(.5) translate(-300px) rotate(-180deg);
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  background: linear-gradient(to left,  #330099, #3366FF);
+  max-width: 400px;
+}
+.container:hover > .item.color4   {
+  transform: scale(.5) translate(-300px) rotate(-180deg);
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  background: linear-gradient(to left, #FF00FF, #1E90FF);
+  max-width: 400px;
+}
+.container:hover > .item.color6   {
+  transform: scale(.5) translate(-300px) rotate(-180deg);
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  background: linear-gradient(to left, #00FFFF, #0000FF);
+  max-width: 400px;
+}
+.container> div:nth-child(even)  {
+  transition: transform 3s ease, opacity 400ms ease;
+  background: linear-gradient(to right, #191970, #66CDAA);
+}
+.container> div:nth-child(odd)  {
+  transition: transform 4s linear, opacity 300ms ease;
+  background: linear-gradient(to right, #66CDAA, #191970);
+}
+.container:hover > div:.item.color1  {
+  background: gray;!important
+}
+.container:hover > .item.color1  {
+  transform: scale(2) translate(200px) rotate(360deg);
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  background: linear-gradient(to right, #0000FF, #00FFFF);
+  max-width: 200px;
+}
+.container:hover > .item.color3  {
+  transform: scale(2) translate(200px) rotate(360deg);
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  background: linear-gradient(to right, #1E90FF, #FF00FF);
+  max-width: 200px;
+}
+.container:hover > .item.color5  {
+  transform: scale(2) translate(200px) rotate(360deg);
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  background: linear-gradient(to right, #3399FF,  #330099);
+  max-width: 200px;
+}
