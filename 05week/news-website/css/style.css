@@ -1,3 +1,6 @@
+body {
+  background-color: #D0D0D0;
+}
 .container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -6,6 +9,14 @@
   height: 1200px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+  background-color: #B0B0B0;
+}
+div a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  font-family: monospace;
 }
 h1 {
 text-align: center;
@@ -13,96 +24,209 @@ font-size: 30px;
 font-family: fantasy;
 margin-top: 10px;
 }
-img {
-  align-items: center;
+.item {
+  background-color: #e6ffe6;
+  font: white;
+  border: solid 1em black;
+  font-family: monospace;
+  text-align: center;
 }
+.item.box1 img {
+  float: left;
+  height: 100%;
+  width: 30%;
+}
+.item.box2 img {
+  float: left;
+  height: 100%;
+  width: 45%;
+}
+.item.box3 img {
+  height: 40%;
+  width: 100%;
+  margin-top: 0px;
+}
+.item.box4 img {
+  height: 30%;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.item.box5 img {
+  height: 30%;
+  width: 100%;
+  margin-top: 0px;
+}
+.item.box6 img {
+  height: 30%;
+  width: 100%;
+  margin-top: 0px;
+}
+.item.box10 img {
+  height: 40%;
+  width: 100%;
+  margin-top: 0px;
+}
+.item.box9 img {
+  height: 40%;
+  width: 100%;
+  margin-top: 0px;
+}
+.item.box8 img {
+  height: 40%;
+  width: 100%;
+  margin-top: 0px;
+}
+.item.box7 img {
+  height: 40%;
+  width: 100%;
+  margin-top: 0px;
+}
+.item.box1 p, .item.box2 p {
+  margin-left: 20px;
+
+}
+.text3 {
+  text-align: center;
+}
+
 h2 {
   text-align: center;
   padding-bottom: 20px;
   font-family: monospace;
 }
+h3 {
+  text-align: center;
+  font-family: fantasy;
+}
 .item.box1 {
-  border: solid gray;
+  border: solid 2px black;
   grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 1;
   grid-row-end: span 2;
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  width: 400px;
+  height: 300px;
+  width: 480px;
   margin-left: 225px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
 }
 .item.box2 {
   grid-column-start: 3;
   grid-column-end: span 5;
   grid-row-start: 1;
   grid-row-end: span 2;
-  height: 500px;
-  width: 400px;
+  height: 300px;
+  width: 480px;
   margin-left: 100px;
   display: flex;
-  flex-direction: column;
-  border: solid gray;
+  flex-direction: row;
+  border: solid 2px black;
+  font-family: monospace;
+  text-align: center;
 }
 .item.box3 {
-  background: purple;
+  border: solid 2px black;
   grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 2;
   grid-row-end: span 4;
+  height: 600px;
+  width: 715px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .item.box4 {
-  background: yellow;
   grid-column-start: 3;
   grid-column-end: span 4;
   grid-row-start: 2;
   grid-row-end: span 3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid 2px black;
+  height: 300px;
+  width: 300px;
 }
 .item.box5 {
-  background: gray;
   grid-column-start: 4;
   grid-column-end: span 5;
   grid-row-start: 2;
   grid-row-end: span 3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid 2px black;
+  height: 300px;
+  width: 300px;
 }
 .item.box6 {
-  background: orange;
+  border: solid gray;
   grid-column-start:3;
   grid-column-end: span 5;
   grid-row-start: 3;
   grid-row-end: span 4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid 2px black;
+  height: 300px;
+  width: 668px;
 }
 .item.box7 {
-  background: aqua;
   grid-column-start:1;
   grid-column-end: span 2;
   grid-row-start: 4;
   grid-row-end: span 5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid 2px black;
+  height: 450px;
+  width: 350px;
 }
 .item.box8 {
-  background: beige;
   grid-column-start:2;
   grid-column-end: span 3;
   grid-row-start: 4;
   grid-row-end: span 5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid 2px black;
+  height: 450px;
+  width: 350px;
 }
 .item.box9 {
-  background: teal;
   grid-column-start:3;
   grid-column-end: span 4;
   grid-row-start: 4;
   grid-row-end: span 5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid 2px black;
+  height: 450px;
+  width: 350px;
 }
 .item.box10 {
-  background: white;
   grid-column-start:4;
   grid-column-end: span 5;
   grid-row-start: 4;
   grid-row-end: span 5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid 2px black;
+  height: 450px;
+  width: 350px;
 }
 
-
+.item:hover {
+  background: #ffccff;
+}
 
 
 /* Extra Small and up (Portrait Phones) */
