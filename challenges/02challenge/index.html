@@ -1,26 +1,177 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Challenge 02</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width:479px)" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (min-width: 480px) and (max-width:767px)" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width:1023px)" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans">
+    <link href='https://fonts.googleapis.com/css?family=Averia Serif Libre' rel='stylesheet'>
+    <title>Challenge 02</title>
 </head>
 <body>
-
-  <ul id="first-list">
-    <li>Catbug</li>
-  </ul>
-
-  <ul id="second-list">
-    <li>Impossibear</li>
-  </ul>
-
-  <ul id="final-list">
-    <li>Beth</li>
-    <li>Chris</li>
-    <li>Wallow</li>
-  </ul>
-
-  <script src="../../node_modules/jquery/dist/jquery.js"></script>
-  <script type="text/javascript" src="./script.js"></script>
-</body>
+  <div id='container'>
+    <!-- Side navigation -->
+    <div class="sidenav">
+      <a href="http://www.facebook.com"><img class="sideimg fb" src="css/fb.png" alt="facebook"></a>
+      <a href="http://www.youtube.com"><img class="sideimg inst" src="css/images.png" alt="youtube"></a>
+      <a href="http://www.twitter.com"><img class="sideimg tw" src="css/twit.png" alt="twitter"></a>
+      <a href="http://www.instagram.com"><img class="sideimg inst" src="css/insta.png" alt="instagram"></a>
+    </div>
+      <!-- Header -->
+    <header>
+      <div id='header-div'>
+        <!-- Dropdown Menu -->
+        <div class='head-div left-div' style="background-image: url(css/c.jpg)">
+        </div>
+          <div class="dropdown">
+            <div class="dropimg" onclick="buttonFunction(this)">
+              <button onclick="myFunction()" class="dropbtn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </button>
+            <div id="myDropdown" class="dropdown-content">
+              <nav>
+              <a href="#">Home</a>
+              <a href="https://www.linkedin.com/in/cassandra-sherwin-097b7a86/">About</a>
+              <a href="https://github.com/CassSherwin">Projects</a>
+              <a href="https://www.facebook.com">Social</a>
+              <a href="https://www.gmail.com">Contact</a>
+            </nav>
+            </div>
+          </div>
+  <!-- Javascript for dropdown -->
+          <script>
+          function buttonFunction(x) {
+              x.classList.toggle("change");
+          }
+          function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+          </script>
+        </div>
+        <a href="https://github.com/CassSherwin">
+        <div class='head-div right-div'>
+          <p>
+            Cass Code
+          </p>
+        </div>
+      </a>
+      </div>
+    </header>
+    <!-- First section -->
+    <section id='first-section'>
+      <div class='sec-div sec-one'  style="background-image: url(css/napa.jpg)">
+      <div class='title'>
+     <h1> Cassandra Sherwin</h1>
+     <hr noshade>
+     <h2> Future Web Developer / Software Engineer</h2>
+    </div>
+  </div>
+    </section>
+    <!-- Second section -->
+    <section id='second-section'>
+      <div class='sec-div sec-two'>
+        <div class='para-div'>
+      <p>
+        <pre class='text-pre'>
+        Hey! I’m Cassandra Sherwin, current student
+        training in Web Development. After years of
+        working in technology took time off to work
+        on my art, photogtraphy, writing and business
+        pursuits...
+        <a class='read' href="css/creepy.jpg">Read More</a>
+      </pre>
+      </p>
+      </div>
+      </div>
+    </section>
+    <!-- Third section -->
+    <section id='third-section'>
+      <div class='sec-div div-three'>
+        <div class='latest'>
+        <p> <pre>
+          Latest from
+          Cassandra Sherwin
+          </pre>
+        </p>
+      </div>
+      <div class='div-three div-photo'>
+        <figure>
+        <img class='flower' src='css/flowers.jpg' alt='field of flowers' />
+        <figcaption>Latest Photos <br /> <a class='more' href="https://www.instagram.com/cassandra3000/"> See more </a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    </section>
+    <!-- Fourth section -->
+    <section id='fourth-section'>
+      <div class='sec-div main-div-four'>
+        <a href="https://www.instagram.com/cassandra3000/">
+          <div class='box pic1' style="background-image: url(css/mountain.jpg)">
+          <div class="pic1-text">
+          <h3 class='piclab'>Photography</h3>
+        </div>
+      </div>
+      </a>
+      <a href="https://github.com/CassSherwin">
+      <div class='box pic2' style="background-image: url(css/waterfall.jpg)">
+        <div class="pic2-text">
+          <h3 class='piclab'>Projects and Code</h3>
+        </div>
+      </div>
+    </a>
+      <a href="css/creepy.jpg">
+      <div class='box pic4' style="background-image: url(css/art.jpg)">
+        <div class="pic4-text">
+          <h3 class='piclab'>Art</h3>
+        </div>
+      </div>
+      </a>
+      <a href="https://www.linkedin.com/in/cassandra-sherwin-097b7a86/">
+      <div class='box pic3' style="background-image: url(css/Cass.jpg)">
+        <div class="pic3-text">
+          <h3 class='piclab'>Follow Me</h3>
+        </div>
+      </div>
+      </a>
+    </section>
+    <!-- Final section -->
+    <section id='fifth-section'>
+      <div class='sec-div sec-five'>
+      <h4> Subscribe to Cassandra Sherwin </h4>
+      <br />
+      <p class="headerinput">
+        <input class="enter" type="text" name="email" value="Your email">
+        <input id="submit" class="submit1" type="submit" value="Submit">
+      </p>
+      <br />
+      <p>
+        © 2018 Cassandra Sherwin. Created by Cassandra Sherwin
+      </p>
+      </div>
+    </section>
+  </div>
+ </body>
 </html>
